@@ -7,7 +7,7 @@ and creates rectangles that are saved as XML files. Unfortunately, the last publ
 labelImg crashes due to data type conflicts. 
 
 This script repairs the labelImg application on your local machine. Once labelImg is installed
-(e.g. by pip install labelimg), this script repairs the type error. It scans through the files
+(e.g. via $ pip install labelimg), this script repairs the type error. It scans through the files
 'canvas.py' and 'labelImg.py' and converts the arguments for drawLine(), drawRect() and 
 setValue() calls to int data types. That's all. Please note that the sript requires write access
 to the files 'canvas.py' and 'labelImg.py'. 
