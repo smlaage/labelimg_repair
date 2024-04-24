@@ -14,7 +14,8 @@ to the files 'canvas.py' and 'labelImg.py'.
 
 Usage:
 - run the script from within a python IDE (e.g. Thonny) or at the command prompt
-- provide the path to the lcoal labelImg installation
+- provide the path to your local labelImg installation. Fortunately, the path is shown
+ as part of the error message when the original labelImg application crashes.
 
 Example:
 python labelimg_repair.py C:\Users\xyz\AppData\Local\Programs\Thonny\Lib\site-packages
