@@ -1,7 +1,7 @@
 <b>labelimg_repair.py</b>
 
 The application labelImg is a popular tool to create labels (annotations) to images as required 
-for object detetcion training images, e.g. using TensorFlow. See: https://github.com/HumanSignal/labelImg.
+for object detection training images, e.g. using TensorFlow. See: https://github.com/HumanSignal/labelImg.
 The labelImg application offers a handy point and click selection of relevant parts of the images
 and creates rectangles that are saved as XML files. Unfortunately, the last published version of 
 labelImg crashes due to data type conflicts. 
