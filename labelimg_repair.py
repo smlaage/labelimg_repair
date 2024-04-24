@@ -116,7 +116,7 @@ try:
         lines = f.readlines()
 except IOError:
     sys.exit("Can't open file '" + canvas_filename + "'")
-print(" - " + str(len(lines)) + " read")
+print(" - " + str(len(lines)) + " lines read")
 repair_cnt = 0
 for idx, l in enumerate(lines):
     repair, new_line = repair_line(l)
@@ -144,7 +144,7 @@ try:
         lines = f.readlines()
 except IOError:
     sys.exit("Can't open file '" + labelimg_filename + "'")
-print(" - " + str(len(lines)) + " read")
+print(" - " + str(len(lines)) + " lines read")
 repair_cnt = 0
 for idx, l in enumerate(lines):
     repair, new_line = repair_line(l)
