@@ -1,10 +1,10 @@
-labelimg_repair.py
+<b>labelimg_repair.py</b>
 
-labelImg is a popular application to create labels (annotations) to images as required 
-by object detetcion, e.g. using TensorFlow. See: https://github.com/HumanSignal/labelImg.
-The labelImg tool offers a handy point and click selection of relevant parts of the images
-and creates rectangles that are saved as XML files. Unfortunately, the last published 
-version of labelImg crashes due to data type conflicts. 
+The application labelImg is a popular tool to create labels (annotations) to images as required 
+for object detetcion training images, e.g. using TensorFlow. See: https://github.com/HumanSignal/labelImg.
+The labelImg application offers a handy point and click selection of relevant parts of the images
+and creates rectangles that are saved as XML files. Unfortunately, the last published version of 
+labelImg crashes due to data type conflicts. 
 
 This script repairs the labelImg application on your local machine. Once labelImg is installed
 (e.g. by pip install labelimg), this script repairs the type error. It scans through the files
