@@ -93,19 +93,22 @@ else:
     if len(labelimg_dir) < 2:
         sys.exit("Nothing to do!")
 
-if not os.path.isdir(labelimg_dir):
-    sys.exit("Invalid directory '" + labelimg_dir + "'")
-else:
-    print("Directory found")
 
 labelimg_dir = labelimg_dir.strip(' ')
 labelimg_dir = labelimg_dir.strip('\\')
+if labelimg_dir[-10:] == '\\canvas.py':
+    labelimg_dir = labelimg_dir[:-10]
 if labelimg_dir[-5:] == '\\libs':
     labelimg_dir = labelimg_dir[:-4]
 if labelimg_dir[-9:] == '\\labelImg':
     labelimg_dir = labelimg_dir[:-9]
 if labelimg_dir[-9:] == '\\labelimg':
     labelimg_dir = labelimg_dir[:-9]
+
+if not os.path.isdir(labelimg_dir):
+    sys.exit("Invalid directory '" + labelimg_dir + "'")
+else:
+    print("Directory found")
 
 print("Repairing canvas.py ...")
 canvas_filename = os.path.join(labelimg_dir, 'libs', 'canvas.py')
