@@ -102,8 +102,6 @@ if labelimg_dir[-5:] == '\\libs':
     labelimg_dir = labelimg_dir[:-4]
 if labelimg_dir[-9:] == '\\labelImg':
     labelimg_dir = labelimg_dir[:-9]
-if labelimg_dir[-9:] == '\\labelimg':
-    labelimg_dir = labelimg_dir[:-9]
 
 if not os.path.isdir(labelimg_dir):
     sys.exit("Invalid directory '" + labelimg_dir + "'")
